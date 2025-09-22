@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO SISR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Indra BPL</h1>
+        <h2>Étudiante en informatique – Systèmes et Réseaux</h2>
+        <img src="photo.jpg" alt="Photo de profil" class="photo-profil">
+    </header>
+
+    <!-- Présentation personnelle -->
+    <section id="presentation">
+        <h3>Présentation personnelle</h3>
+        <p>Résumé du parcours avant le BTS, motivations et objectifs.</p>
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+        <h3>Mon CV</h3>
+        <p><a href="CV.pdf" target="_blank">Télécharger mon CV</a></p>
+    </section>
+
+    <!-- Projets / Vignettes -->
+    <section id="projets">
+        <h3>Projets réalisés</h3>
+        <div class="vignettes">
+            <div class="vignette">Stage</div>
+            <div class="vignette">Atelier 2</div>
+        </div>
+    </section>
+
+    <!-- Métiers recherchés -->
+    <section id="metiers">
+        <h3>Métiers visés</h3>
+        <p>Exemple : Administratrice systèmes et réseaux</p>
+        <p><a href="carte-heuristique.pdf" target="_blank">Voir la carte heuristique</a></p>
+    </section>
+
+    <!-- Veille informationnelle -->
+    <section id="veille">
+        <h3>Veille informationnelle</h3>
+        <ul>
+            <li>Thème 1 : Description rapide + pourquoi</li>
+            <li>Thème 2 : Description rapide + pourquoi</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h3>Contact</h3>
+        <form action="mailto:tonemail@gmail.com" method="post" enctype="text/plain">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</body>
+</html>
