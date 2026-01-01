@@ -30,6 +30,7 @@ section {
 .vignettes {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* permet de passer en colonne si l'écran est trop petit */
 }
 
 .vignette {
@@ -38,6 +39,34 @@ section {
     flex: 1;
     text-align: center;
     cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* animation hover douce */
+}
+
+/* Hover interactif */
+.vignette:hover {
+    background-color: #f0f0f0;
+    border-color: #000;
+}
+
+/* Limite la hauteur pour les listes longues (Laboratoire technique personnel) */
+.vignette ul {
+    padding-left: 20px;
+    text-align: left;
+    max-height: 250px; /* ajuste selon la hauteur que tu veux */
+    overflow-y: auto;   /* ajoute scroll si la liste est trop longue */
+    margin: 10px 0 0 0;
+}
+
+/* Responsive pour écrans petits */
+@media (max-width: 768px) {
+    .vignettes {
+        flex-direction: column;
+    }
+    .vignette {
+        width: 100%;
+    }
+}
+
 }
 
 /* --- Formulaire de contact --- */
