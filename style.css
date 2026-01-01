@@ -37,9 +37,15 @@ section {
     padding: 20px;
     border: 1px solid #333;
     flex: 1;
-    text-align: left;   /* ALIGNE À GAUCHE pour tous les projets */
+    text-align: left;   /* texte des projets aligné à gauche */
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Centrer les titres */
+.vignette h2 {
+    text-align: center; /* titre centré */
+    margin-bottom: 15px; /* espace sous le titre */
 }
 
 /* Hover interactif */
@@ -50,7 +56,7 @@ section {
 
 /* Paragraphes projets */
 .vignette p {
-    margin: 8px 0;       /* espace uniforme entre projets */
+    margin: 8px 0;       
     font-size: 0.95em;
 }
 
@@ -67,7 +73,7 @@ section {
     }
     .vignette {
         width: 100%;
-        text-align: left;  /* garde aligné à gauche sur mobile */
+        text-align: left;  /* garde les projets alignés à gauche */
     }
 }
 
